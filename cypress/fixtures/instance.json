@@ -1,0 +1,116 @@
+{
+  "healthy": {
+    "instance": {
+      "id": "inst-001",
+      "name": "Production Server",
+      "status": "running",
+      "health": "healthy",
+      "lastChecked": "2024-01-15T10:30:00Z",
+      "metrics": {
+        "cpu": 45,
+        "memory": 62,
+        "disk": 38
+      },
+      "alerts": []
+    }
+  },
+  "degraded": {
+    "instance": {
+      "id": "inst-002",
+      "name": "Staging Server",
+      "status": "running",
+      "health": "degraded",
+      "lastChecked": "2024-01-15T10:30:00Z",
+      "metrics": {
+        "cpu": 78,
+        "memory": 85,
+        "disk": 72
+      },
+      "alerts": [
+        {
+          "id": "alert-001",
+          "severity": "warning",
+          "message": "High memory usage detected",
+          "timestamp": "2024-01-15T10:25:00Z"
+        }
+      ]
+    }
+  },
+  "critical": {
+    "instance": {
+      "id": "inst-003",
+      "name": "Database Server",
+      "status": "running",
+      "health": "critical",
+      "lastChecked": "2024-01-15T10:30:00Z",
+      "metrics": {
+        "cpu": 95,
+        "memory": 92,
+        "disk": 89
+      },
+      "alerts": [
+        {
+          "id": "alert-002",
+          "severity": "error",
+          "message": "CPU usage critical - immediate attention required",
+          "timestamp": "2024-01-15T10:28:00Z"
+        },
+        {
+          "id": "alert-003",
+          "severity": "error",
+          "message": "Disk space running low",
+          "timestamp": "2024-01-15T10:29:00Z"
+        }
+      ]
+    }
+  },
+  "unknown": {
+    "instance": {
+      "id": "inst-004",
+      "name": "Unknown Server",
+      "status": "unknown",
+      "health": null,
+      "lastChecked": "2024-01-15T10:30:00Z",
+      "metrics": {
+        "cpu": 0,
+        "memory": 0,
+        "disk": 0
+      },
+      "alerts": []
+    }
+  },
+  "withMultipleAlerts": {
+    "instance": {
+      "id": "inst-005",
+      "name": "Alert Test Server",
+      "status": "running",
+      "health": "degraded",
+      "lastChecked": "2024-01-15T10:30:00Z",
+      "metrics": {
+        "cpu": 65,
+        "memory": 70,
+        "disk": 55
+      },
+      "alerts": [
+        {
+          "id": "alert-101",
+          "severity": "warning",
+          "message": "First warning alert",
+          "timestamp": "2024-01-15T10:20:00Z"
+        },
+        {
+          "id": "alert-102",
+          "severity": "error",
+          "message": "Critical error alert",
+          "timestamp": "2024-01-15T10:22:00Z"
+        },
+        {
+          "id": "alert-103",
+          "severity": "info",
+          "message": "Informational alert",
+          "timestamp": "2024-01-15T10:24:00Z"
+        }
+      ]
+    }
+  }
+}

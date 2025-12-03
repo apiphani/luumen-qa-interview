@@ -1,0 +1,27 @@
+{
+  "name": "luumen-qa-interview",
+  "version": "1.0.0",
+  "description": "QA Interview Assessment - Cypress Component Testing",
+  "private": true,
+  "scripts": {
+    "cypress:open": "cypress open --component",
+    "cypress:run": "cypress run --component",
+    "test": "cypress run --component"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.10",
+    "antd": "^5.13.2",
+    "@ant-design/icons": "^5.2.6",
+    "graphql": "^16.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "cypress": "^13.6.3",
+    "vite": "^5.0.12"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
