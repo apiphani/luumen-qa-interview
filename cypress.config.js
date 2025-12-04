@@ -7,7 +7,7 @@ module.exports = defineConfig({
       bundler: 'vite',
     },
     specPattern: 'cypress/component/**/*.cy.{js,jsx,ts,tsx}',
-    supportFile: 'cypress/support/component.js',
+    supportFile: 'cypress/support/component.jsx',
   },
   viewportWidth: 1280,
   viewportHeight: 720,
